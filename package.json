@@ -1,0 +1,21 @@
+{
+  "name": "eagletrt-telemetria-gps-handler",
+  "version": "1.0.0",
+  "description": "Handles the broadcasting from the GPS serial to multiple pseudoterminals",
+  "main": "index.js",
+  "scripts": {
+    "compile": "echo \"Error: no COMPILE specified\" && exit 1",
+    "run": "echo \"Error: no RUN specified\" && exit 1",
+    "test": "echo \"Error: no TEST specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eagletrt/eagletrt-telemetria-gps-handler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eagletrt/eagletrt-telemetria-gps-handler/issues"
+  },
+  "homepage": "https://github.com/eagletrt/eagletrt-telemetria-gps-handler#readme"
+}
