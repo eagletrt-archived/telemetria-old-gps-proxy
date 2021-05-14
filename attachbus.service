@@ -1,0 +1,12 @@
+[Unit]
+Description=Attach fakebus to real GPS port
+After=multi-user.target fakebus.service
+Requires=fakebus.service
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/ttybus/tty_attach -d -s /tmp/fakebus /dev/ttyACM0
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

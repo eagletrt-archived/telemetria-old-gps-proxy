@@ -1,0 +1,15 @@
+[Unit]
+Description=Fakebus for GPS broadcasting
+After=multi-user.target
+Before=attachbus.service
+
+[Service]
+Type=forking
+ExecStart= /home/ubuntu/ttybus/tty_bus -d -s /tmp/fakebus
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=attachbus.service
+
+
+
