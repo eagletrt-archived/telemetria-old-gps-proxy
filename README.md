@@ -1,4 +1,4 @@
-# telemetria-gps-handler
+# telemetria-gps-proxy
 
 The purpose of this repository is to allow broadcast communication from the GPS serial port to different applications simultaneously.
 
