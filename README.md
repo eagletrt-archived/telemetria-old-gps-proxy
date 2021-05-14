@@ -7,7 +7,7 @@ When the GPS is connected it's seen as `/dev/ttyACM0`, and only allows for one c
 **ttybus** it's a tool from [danielinux](https://github.com/danielinux/) that allows sharing of tty devices between different processes, and therefore satisfies our needs. 
 The explanation of all of its functions is left to the [repository's documentation](https://github.com/danielinux/ttybus), this readme will show how it's implemented and used in our context.
 
-##Create the fake bus at car boot up
+## Create the fake bus at car boot up
 
 Once the car and it's software components boot up, `fakebus.service` has to be launched to create a fake bus, after that `attachbus.service` can run to attach the bus to the GPS port `/dev/ttyACM0`.
 
@@ -19,7 +19,7 @@ These two services are placed in `/etc/systemd/system` to automatically start at
 
 The bus is now broadcasting the signal coming from `/dev/ttyACM0` and it's ready to accept connections from fake devices created from now on.
 
-##Create a fake device
+## Create a fake device
 
 Every time a new application needs to read GPS data, a new fake device need to be created and attached to the existing bus, to do that, use the `tty_fake` C program in the **ttybus** repository, indicating the bus to attach to, and the position of the new device:
 
